@@ -13,10 +13,59 @@
 }
 
 .left-side {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 45%;
   padding: 3%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #d6d6d3;
   background-image: url('../images/banner4.png');
   background-position: 50% 50%;
   background-size: cover;
 }
+
+.content-wrapper {
+  display: block;
+  max-width: 560px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-wrapper.centercontent {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.chapter-name {
+  font-family: Nunito, sans-serif;
+  color: #fff;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.subtitle {
+  max-width: 560px;
+  font-family: Nunito, sans-serif;
+  color: #fff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, .34);
+  color: #000;
+}
+
