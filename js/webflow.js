@@ -4334,5 +4334,6 @@
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([
-  {"slug":"chapter-slide","name":"Chapter Slide","value":{"style":{},"triggers":[{"type":"click","selector":".chapter-wrapper","preserve3d":true,"stepsA":[{"display":"block"},{"transition":"transform 500ms ease 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}}
+  {"slug":"chapter-slide","name":"Chapter Slide","value":{"style":{},"triggers":[{"type":"click","selector":".chapter-wrapper","preserve3d":true,"stepsA":[{"display":"block"},{"transition":"transform 500ms ease 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}},
+  {"slug":"close","name":"Close","value":{"style":{},"triggers":[{"type":"click","selector":".chapter-wrapper","preserve3d":true,"stepsA":[{"transition":"transform 500ms ease 0","x":"-100%","y":"0px","z":"0px"},{"display":"none"}],"stepsB":[]}]}}
 ]);

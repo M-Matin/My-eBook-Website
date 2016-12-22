@@ -137,15 +137,15 @@
   top: 0px;
   bottom: 0px;
   z-index: 999;
-  display: none;
+  display: block;
   overflow: scroll;
   width: 45%;
   height: auto;
   padding: 3%;
   background-color: #fff;
-  -webkit-transform: translate(-100%, 0px);
-  -ms-transform: translate(-100%, 0px);
-  transform: translate(-100%, 0px);
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 .chapters-thumbnail {
