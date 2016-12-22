@@ -69,3 +69,53 @@
   color: #000;
 }
 
+.author-image {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 70px;
+}
+
+.author-name {
+  font-family: Nunito, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.logo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  display: block;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+  background-image: url('../images/logo.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.chapters-link {
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
+  padding-left: 38px;
+  background-color: #fff;
+  background-image: url('../images/web-page-menu-icon-75688.png');
+  background-position: 8px 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  font-family: Nunito, sans-serif;
+  color: rgba(37, 37, 37, .84);
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
