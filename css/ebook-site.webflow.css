@@ -10,6 +10,7 @@
   display: flex;
   width: 100%;
   height: 100%;
+  background-color: #fff;
 }
 
 .left-side {
@@ -41,6 +42,17 @@
   position: relative;
   z-index: 10;
   text-align: center;
+}
+
+.content-wrapper.chapters-subject {
+  height: auto;
+  margin-bottom: 18px;
+  padding: 0px 10px;
+  font-family: Nunito, sans-serif;
+  color: #535353;
+  font-size: 21px;
+  line-height: 19px;
+  font-weight: 400;
 }
 
 .chapter-name {
@@ -117,5 +129,189 @@
   color: rgba(37, 37, 37, .84);
   font-weight: 300;
   text-transform: capitalize;
+}
+
+.chapter-wrapper {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 999;
+  overflow: scroll;
+  width: 45%;
+  height: auto;
+  padding: 3%;
+  background-color: #fff;
+}
+
+.chapters-thumbnail {
+  width: 25%;
+  height: 90px;
+  margin-right: 20px;
+  float: left;
+  background-image: url('../images/images_1.jpeg');
+  background-position: 50% 50%;
+  background-size: 130px;
+  background-repeat: no-repeat;
+}
+
+.chapters-thumbnail.color-theory {
+  display: block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.chapters-thumbnail.typography {
+  background-image: url('../images/technology-in-typography-evolution.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chapters-thumbnail.graphic-design {
+  background-image: url('../images/graphic_design_idea.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chapters-thumbnail.layout {
+  background-image: url('../images/layoutideas-6-1.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+
+.chapters-thumbnail.ui {
+  background-image: url('../images/UI.jpg');
+  background-position: 95% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chapters-thumbnail.ux {
+  background-image: url('../images/UX-Design-.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chapters-thumbnail.ui-ux {
+  background-image: url('../images/Knowing-the-difference-between-the-UX-and-UI-design-1.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.chapters-thumbnail.sitemap {
+  background-image: url('../images/site_map.gif');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.chapters-thumbnail.front-end {
+  background-image: url('../images/front-end-developer-wanted-illustration.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.chapters-thumbnail.freelance {
+  background-image: url('../images/images.jpeg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.chapters-thumbnail.marketing {
+  background-image: url('../images/13fec407a671b2756c1ffbed3a067073.jpg');
+  background-size: cover;
+}
+
+.chapter-number {
+  position: static;
+  left: 0px;
+  top: 0px;
+  display: inline-block;
+  overflow: visible;
+  width: 70%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: 1px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  float: none;
+  clear: none;
+  color: #1d1c1c;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.chapters-names {
+  position: static;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  display: inline-block;
+  width: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  float: none;
+  clear: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  font-family: Nunito, sans-serif;
+  color: #46c04b;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.chapters-names:hover {
+  color: #2a312c;
+}
+
+.link-chapters {
+  display: block;
+  padding-right: 0px;
+}
+
+.chapter-div {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-left: 26px;
+}
+
+.close {
+  display: block;
+  margin-bottom: 24px;
+  margin-left: 0px;
+  padding-top: 15px;
+  font-family: Nunito, sans-serif;
+  color: #46c04b;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.close:hover {
+  font-family: Nunito, sans-serif;
+  color: #0a0a0a;
 }
 
