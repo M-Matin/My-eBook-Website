@@ -40,7 +40,7 @@
           <div class="chapters-names">Typography and Font</div>
         </a>
       </div>
-      <div class="chapters-subject content-wrapper">
+      <div class="chapters-subject content-wrapper" data-ix="chapter-3">
         <a class="link-ch3 w-clearfix w-inline-block" data-ix="chapter-3" href="#">
           <div class="chapters-thumbnail graphic-design"></div>
           <div class="chapter-number">Chapter: 3</div>
@@ -49,9 +49,9 @@
       </div>
       <div class="chapters-subject content-wrapper">
         <a class="link-ch4 w-clearfix w-inline-block" data-ix="chapter-4" href="#">
-          <div class="chapters-thumbnail layout"></div>
+          <div class="chapters-thumbnail ux"></div>
           <div class="chapter-number">Chapter: 4</div>
-          <div class="chapters-names">Layout Concept</div>
+          <div class="chapters-names">UX Designer &amp; Tools</div>
         </a>
       </div>
       <div class="chapters-subject content-wrapper">
@@ -63,9 +63,9 @@
       </div>
       <div class="chapters-subject content-wrapper">
         <a class="link-ch6 w-clearfix w-inline-block" data-ix="chapter-6" href="#">
-          <div class="chapters-thumbnail ux"></div>
+          <div class="chapters-thumbnail layout"></div>
           <div class="chapter-number">Chapter: 6</div>
-          <div class="chapters-names">UX Designer &amp; Tools</div>
+          <div class="chapters-names">Layout From Zero</div>
         </a>
       </div>
       <div class="chapters-subject content-wrapper">
@@ -352,7 +352,7 @@
         </div>
       </div>
     </div>
-    <div class="ch4" data-ix="chapter-3">
+    <div class="ch4">
       <div class="content-wrapper">
         <div class="top-content w-clearfix"><a class="top-link">Web Design 101</a><a class="top-link">Chapter: 4</a><a class="amazon top-link" href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&amp;node=283155" target="_blank">Try Amazon</a>
         </div>
@@ -466,25 +466,84 @@
         </div>
         <div class="text-holder">
           <div class="rich-text w-richtext">
-            <h2>Why Responsive Design?aaa</h2>
-            <blockquote>If you've built a web site in the past several years, you've probably heard of Responsive Design. Coined in 2010 by designer Ethan Marcotte, the term covers a set of techniques that allow one flexible web design to serve many different screen sizes.</blockquote>
-            <p>In the years since it hit the scene, "responsive" has become the default choice for&nbsp;<a href="http://blog.aids.gov/2014/07/aids-gov-mobile-success-story.html" target="_blank">modern, mobile-friendly sites</a>. With that visibility, though, comes misunderstanding and controversy! Some proponents treat responsive design as a silver bullet for every project's tough problems, while detractors complain it will limit their grand vision. Some clients believe they have to choose between a responsive site or a native mobile app, as if one ruled out the other. And in a few frustrating situations, we've seen totally separate mobile, tablet, and desktop mockups passed off as a "responsive" approach.</p>
-            <p>At Lullabot, we believe that&nbsp;<a href="https://www.lullabot.com/articles/responsive-adaptive-web-design">responsive design is a critical part of future-friendly web publishing</a>. Making the most of it requires understanding which problems it solves, which ones it doesn’t, and how it fits your project’s needs. In this article we'll take a look at how we build responsive sites, correct some common misconceptions, and explain the real benefits for your projects.</p>
-            <h3>What is "Responsive," anyways?</h3>
-            <p>Ethan Marcotte's&nbsp;<a href="http://alistapart.com/article/responsive-web-design/">seminal article</a>&nbsp;and follow-up book define specific techniques that make a site responsive. Both make great reading for anyone who wants to dig into the details. At a high level, we can boil it down to a handful of principles.</p>
+            <h2>How Does a User See Design?</h2>
             <p>‍</p>
-            <h4>BUILD A FLUID, FLEXIBLE LAYOUT.</h4>
-            <p>Ever since the first Photoshop mockup was used to sell a site design, web developers have been creating "fixed width" layouts that target specific screen sizes. When space-constrained mobile browsers hit the market, they had to create custom mobile sites with stripped-down designs. Responsive design starts with a layout that&nbsp;<a href="http://alistapart.com/article/fluidgrids">stretches and squishes</a>&nbsp;to fit any screen, often relying on&nbsp;<a href="http://www.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/">percentages and ratios</a>&nbsp;rather than fixed sizes and positions.</p>
+            <p><em>There’s often a disconnect between the way a designer looks at a website or brochure or package and the way users see it. As a designer, you can appreciate trends and attention to typography and details in a way that the common user might not.</em>
+            </p>
+            <p>Users only know whether they understand something when they interact with it. The details of how that interaction happens or why it is pleasing are often lost. It’s a pretty harsh reality.
+            </p>
+            <p>But there’s a nugget of wisdom in understanding that disconnect. If you think about what users are thinking, you will be a better designer. (Even if you don’t particularly like their thoughts on design.)</p>
             <p>‍</p>
-            <h4>MEDIA QUERIES TWEAK ELEMENTS WHEN THE LAYOUT BREAKS.</h4>
-            <p>Stretchable, squeezable fluid layouts can't cover every extreme: a design that looks great on a 27" desktop monitor might look impossibly cluttered on a 4" phone. Designers identify situations where the fluid design breaks, and use&nbsp;<a href="http://cssmediaqueries.com/">conditional CSS rules</a>&nbsp;to add special styling instructions for those "<a href="http://alistapart.com/article/designing-for-breakpoints">breakpoints</a>." On a tall-but-skinny smartphone, for example, sidebars might be moved to the bottom of an article to leave more space for text. On a wide desktop screen, photo captions might be moved beside images to take advantage of the extra room.</p>
+            <h3>Typography is Good or Bad</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/prototyze-the-year-of-the-incubator.jpg">
+              </div>
+            </figure>
             <p>‍</p>
-            <h4>IMAGES AND MEDIA MUST BE FLEXIBLE.</h4>
-            <p>Giant fixed-width images, embedded media players, and clunky widgets can all break your smooth, fluid layouts. Styling for these elements should use percentages and ratios, too—ensuring that they conform to fit the responsive layout they're placed in. Tools like&nbsp;<a href="http://fitvidsjs.com/">FitVid.js</a>and the new&nbsp;<a href="http://webdesign.tutsplus.com/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015">HTML Picture element</a>&nbsp;can make this part easier.</p>
+            <p>Designers love typography. Beautiful characters. Long swashes. Serifs with charm.</p>
+            <p>Sadly, many users don’t know Arial from Helvetica. (Nor do they care.) When it comes to type, users know one thing. Can they read it?</p>
+            <p>That doesn’t mean you can forget lettering in projects. It actually means quite the opposite. You need to pay even more attention to it. To keep users interested, every word, paragraph and headline must be perfectly readable. Users should not have to concentrate or think about the words to decipher them.</p>
+            <p>It’s your job to ensure that words are clear, spacing is adjusted properly and every bit of the message is on clear display.</p>
             <p>‍</p>
-            <h4>RESPOND TO CAPABILITIES, NOT SPECIFIC DEVICES.</h4>
-            <p>The most important principle is simple: responsive design plans for scenarios and capabilities, rather than specific hardware devices. Instead of "sniffing" for iPhones and generating custom HTML and CSS, a responsive site uses one standard set of HTML. Conditional CSS rules and client-side scripts account for the special cases like low-resolution portrait displays, mobile devices with GPS capabilities, and so on. That ensures the design will respond intelligently to any device that matches the right criteria—including newly released ones—and the long tail of older devices often ignored by the latest design trends.</p>
-            <p>Although device detection, tailored markup, and other techniques can be layered on top of a responsive design, a strong responsive foundation is the most reliable starting point.</p>
+            <h3>Color Often Goes Unnoticed</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/studio-dot.jpg">
+              </div>
+            </figure>
+            <p>Users don’t pay as much attention to color as you might expect. While designers may ponder over the difference between periwinkle and coneflower for hours, the casual user will often see blue.</p>
+            <p>Now here’s the caveat: If a color changes dramatically, say from blue to yellow, users will notice. When it comes to color, big shifts in hue are what users tend to focus on.</p>
+            <p>The thing that’s difficult about color is perception. People bring so many different notions and ideas to color choices. Make sure you have a general idea of common color associations and pair color in a way that’s accessible to all – consider choices that are visible for those that don’t see color well – for the safest color combinations.</p>
+            <p>‍</p>
+            <h3>Buttons Need to Be Obvious</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/alex-kot.jpg">
+              </div>
+            </figure>
+            <p>There was an almost fatal flaw in ghost button trend: Users did not see the button when interacting with the design. It almost seemed to fade into the background.</p>
+            <p>While this has shifted somewhat over time, and as ghost buttons became more popular, it was a real problem (and still can be in some instances). Super-trendy elements that look different from what users expect can lead to lost conversions.</p>
+            <p>Calls to action – forms, buttons, links – need to obvious and follow common user patterns for the most success. Users have short attention spans and won’t stick around to “learn” an unconventional design. Make it easy for them.</p>
+            <p>‍</p>
+            <h3>Minimalism is ‘Overrated’</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/simone-viola-design-studio.jpg">
+              </div>
+            </figure>
+            <p>Admit it. Minimalism is one of your favorite go-to design options.</p>
+            <p>While some users appreciate this simple beauty, more often it feels stark to them. “Where is everything?” they might ask.</p>
+            <p>This can be a difficult hurdle to overcome. You’re likely to see this pushback in the early stages of design when working with clients that are always asking to put more “stuff” in the design – more photos, more color, more text.</p>
+            <p>Try to strike a balance with nice open spaces and clean lines that don’t feel cluttered. The end result might not be purely minimal, but will be more pleasing to the client and end user.</p>
+            <p>‍</p>
+            <h3>Big Images Take Up a Lot of Space</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/brave.jpg">
+              </div>
+            </figure>
+            <p>A large, interesting image will grab a user’s attention like few other things. But users don’t always agree with this statement.</p>
+            <p>This is one of those situations where the user doesn’t know what they don’t know. It’s hard to compare a design with small images versus oversized options. The difference in impact is often clear for someone with that design eye.</p>
+            <p>This is where you have to sell it to clients in the best interest of users. Go back to the theory that magazines and newspapers have used for years – tell users what is important. A big photo or video or illustration does that. A group of small elements often does not have the same lasting impression.</p>
+            <p>It’s your job to help figure out what that first impression is supposed to be with the design. What problem are you trying to solve? What does the user need to know right away? Therein lies the answer.</p>
+            <p>‍</p>
+            <h3>They Know Branding</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/etecc-interactive.jpg">
+              </div>
+            </figure>
+            <p>Everyday users know a lot more about branding than they are given credit for. A user will know of a brand changes color or if the font in the logo shifts. (They might not always be able to pinpoint what’s different, but will know something has changed.)</p>
+            <p>Any shift in an established brand identity can be jarring and confusing to users. That’s why it is so important to follow established rules for how to represent a brand visually. (If you are not working for a style guide, it is time to develop one now.)</p>
+            <p>‍</p>
+            <h3>It Either Works or Doesn’t</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/percept-brand-design.jpg">
+              </div>
+            </figure>
+            <p>Have you started to pick up on a common theme in what users perceive when they look at a design?</p>
+            <p>It either works … or it doesn’t.</p>
+            <p>Users seldom understand why. Users seldom care why a design works or not. If it works, they continue to engage. When it doesn’t, they abandon the design and move on to something else.</p>
+            <p>It’s your job to be ahead of the user when it comes to what works or doesn’t. A good plan for user testing helps. More important are all of those design basics that you probably don’t think about. Design and color theory, user patterns, principles of typography and even speed and interaction design with websites and apps.</p>
+            <h3>Conclusion</h3>
+            <p>It’s a lot to think about. You only thought you had to design something that looks good to you, right?</p>
+            <p>The good thing that is that most clients often see the design like typical users. Many of these issues are at the root of conversations you are already having. Hopefully, now you can think about them a little differently and plan for what these users are thinking (and how to help improve the design so that it looks great to you … and them!)</p>
+            <p>‍</p>
             <p>‍</p>
             <p>‍</p>
             <p>‍</p>
@@ -498,25 +557,94 @@
         </div>
         <div class="text-holder">
           <div class="rich-text w-richtext">
-            <h2>Why Responsive Design?aaa</h2>
-            <blockquote>If you've built a web site in the past several years, you've probably heard of Responsive Design. Coined in 2010 by designer Ethan Marcotte, the term covers a set of techniques that allow one flexible web design to serve many different screen sizes.</blockquote>
-            <p>In the years since it hit the scene, "responsive" has become the default choice for&nbsp;<a href="http://blog.aids.gov/2014/07/aids-gov-mobile-success-story.html" target="_blank">modern, mobile-friendly sites</a>. With that visibility, though, comes misunderstanding and controversy! Some proponents treat responsive design as a silver bullet for every project's tough problems, while detractors complain it will limit their grand vision. Some clients believe they have to choose between a responsive site or a native mobile app, as if one ruled out the other. And in a few frustrating situations, we've seen totally separate mobile, tablet, and desktop mockups passed off as a "responsive" approach.</p>
-            <p>At Lullabot, we believe that&nbsp;<a href="https://www.lullabot.com/articles/responsive-adaptive-web-design">responsive design is a critical part of future-friendly web publishing</a>. Making the most of it requires understanding which problems it solves, which ones it doesn’t, and how it fits your project’s needs. In this article we'll take a look at how we build responsive sites, correct some common misconceptions, and explain the real benefits for your projects.</p>
-            <h3>What is "Responsive," anyways?</h3>
-            <p>Ethan Marcotte's&nbsp;<a href="http://alistapart.com/article/responsive-web-design/">seminal article</a>&nbsp;and follow-up book define specific techniques that make a site responsive. Both make great reading for anyone who wants to dig into the details. At a high level, we can boil it down to a handful of principles.</p>
+            <h2>5 Website Layout Ideas That Never Get Old</h2>
             <p>‍</p>
-            <h4>BUILD A FLUID, FLEXIBLE LAYOUT.</h4>
-            <p>Ever since the first Photoshop mockup was used to sell a site design, web developers have been creating "fixed width" layouts that target specific screen sizes. When space-constrained mobile browsers hit the market, they had to create custom mobile sites with stripped-down designs. Responsive design starts with a layout that&nbsp;<a href="http://alistapart.com/article/fluidgrids">stretches and squishes</a>&nbsp;to fit any screen, often relying on&nbsp;<a href="http://www.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/">percentages and ratios</a>&nbsp;rather than fixed sizes and positions.</p>
+            <p><em>There’s always that moment at the beginning of a website design project where you think “where do I start?” You’ll battle the desire to create something totally different and new versus something tested and reliable.</em>
+            </p>
+            <p>Realistically, there are a few layouts that just never get old. These patterns are generally accepted by users, easy to understand and provide a solid framework for pretty much any design and content type. Here, we’ll look at these five “timeless” website layouts and how to make the most of them for your next project.</p>
+            <h3>1. Hero Image Stacked on Simple Grid</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/armando.jpg">
+              </div>
+            </figure>
             <p>‍</p>
-            <h4>MEDIA QUERIES TWEAK ELEMENTS WHEN THE LAYOUT BREAKS.</h4>
-            <p>Stretchable, squeezable fluid layouts can't cover every extreme: a design that looks great on a 27" desktop monitor might look impossibly cluttered on a 4" phone. Designers identify situations where the fluid design breaks, and use&nbsp;<a href="http://cssmediaqueries.com/">conditional CSS rules</a>&nbsp;to add special styling instructions for those "<a href="http://alistapart.com/article/designing-for-breakpoints">breakpoints</a>." On a tall-but-skinny smartphone, for example, sidebars might be moved to the bottom of an article to leave more space for text. On a wide desktop screen, photo captions might be moved beside images to take advantage of the extra room.</p>
+            <p>No matter the screen size, this format gives the user something to look at, scroll through and digest. While the actual specifications for this shape might changes based on device type or whether you prefer a full-width or shallow image, the sketch is roughly the same.</p>
+            <ul>
+              <li>Navigation</li>
+              <li>Hero image with text overlay</li>
+              <li>2 to 4 columns with small information elements with or without icons</li>
+              <li>Main body area</li>
+              <li>Footer</li>
+            </ul>
+            <p>The design is clean, provides a strong visual presence and tends to work well with responsive frameworks regardless of breakpoint. Some alternative applications of this format are to switch a static hero header for a slider or video header.</p>
             <p>‍</p>
-            <h4>IMAGES AND MEDIA MUST BE FLEXIBLE.</h4>
-            <p>Giant fixed-width images, embedded media players, and clunky widgets can all break your smooth, fluid layouts. Styling for these elements should use percentages and ratios, too—ensuring that they conform to fit the responsive layout they're placed in. Tools like&nbsp;<a href="http://fitvidsjs.com/">FitVid.js</a>and the new&nbsp;<a href="http://webdesign.tutsplus.com/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015">HTML Picture element</a>&nbsp;can make this part easier.</p>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/rodesk.jpg">
+              </div>
+            </figure>
             <p>‍</p>
-            <h4>RESPOND TO CAPABILITIES, NOT SPECIFIC DEVICES.</h4>
-            <p>The most important principle is simple: responsive design plans for scenarios and capabilities, rather than specific hardware devices. Instead of "sniffing" for iPhones and generating custom HTML and CSS, a responsive site uses one standard set of HTML. Conditional CSS rules and client-side scripts account for the special cases like low-resolution portrait displays, mobile devices with GPS capabilities, and so on. That ensures the design will respond intelligently to any device that matches the right criteria—including newly released ones—and the long tail of older devices often ignored by the latest design trends.</p>
-            <p>Although device detection, tailored markup, and other techniques can be layered on top of a responsive design, a strong responsive foundation is the most reliable starting point.</p>
+            <p><strong>Why it works:</strong> Every element has a place and there is a logical flow to following the content. The main image is the first impression that should draw users into the design and secondary elements should make users want to click around.</p>
+            <p><strong>Incorporate a trend:</strong> Add bright colored icons or boxes to the column-based informational elements, or use a flat style for the user interface elements throughout the design.</p>
+            <p>‍</p>
+            <h3>2. One Page, One Column</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/pop-up.jpg">
+              </div>
+            </figure>
+            <p>‍</p>
+            <p>One page layouts are one of the best solutions for websites with minimal content and a single focus or message. When the message is simple, there’s not need to go crazy with the shape of the layout either. A one-column layout can be the perfect solution.</p>
+            <ul>
+              <li>Navigation</li>
+              <li>Main body area with images and text</li>
+              <li>Footer</li>
+            </ul>
+            <p>When using this design pattern, space is a vital design element. Ensure that elements have plenty of room between them and consider using exaggerated spacing on the outside edges of the design. The risk with a one-page website is that it can feel cramped or disorganized if spacing is out of whack.</p>
+            <p><strong>Why it works:</strong> The one-page formula is best-suited for small websites. It can make the lack of content on an introductory page or simple portfolio feel weightier than it is. The format also works well for simple blogs or content plans that stick to a single format.</p>
+            <p><strong>Incorporate a trend:</strong> Add parallax scrolling to make the page feel more engaging as users scroll. These simple effects can make a simple one-page design feel deeper and more robust (and like it actually has multiple pages with each flick of the mouse).</p>
+            <p>‍</p>
+            <h3>3. Defined Grid</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/seb.jpg">
+              </div>
+            </figure>
+            <p>‍</p>
+            <p>Neatly stacked rows and columns of content never goes out of style. Whether the grid is built with plenty of small pieces or just a four-by-four arrangement, a clean grid tells your user something about you from the start. This content is organized, managed well and ordered for you.</p>
+            <p>Grids are incredibly popular among designers for their own portfolio websites. What’s nice about an image grid is that you can showcase a lot of visual content without looking junky. This gallery effect can be quite impactful.</p>
+            <p>Grids can also come in the form of colored boxes or containers to organize text. Grid lines can be visible or invisible. There are so many options to choose from. Just remember to take particular care with the width and depth of columns and rows and spacing in between each. These little details can make or break the entire design.</p>
+            <p><strong>Why it works:</strong> The organization a grid creates is hard to beat. A nice grid makes it easy for users to find and interact with content while creating visual harmony.</p>
+            <p><strong>Incorporate a trend:</strong> Use simple bits of animation for a tiled grid so that a hover of click “flips” a grid block to show additional information. Want another option? Consider turning the grid into a card deck, featuring a Material Design style.</p>
+            <p>‍</p>
+            <p>‍</p>
+            <h3>4. The Classic F-Pattern</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/motive.jpg">
+              </div>
+            </figure>
+            <p>‍</p>
+            <p>Research into the way people look at websites uncovered a particular flow known as the F-Pattern. The reading pattern showed that users start at the top of a website and read from left to right across the screen. Then they move down and read across again. Finally, they just skim to the bottom of the page in a straight line.</p>
+            <p>Designing content in this F-Pattern is a way to help put the content that matters most right where users are looking. This concept translates into a common design outline.</p>
+            <ul>
+              <li>Header and navigation</li>
+              <li>Wide left-hand column as the main content area</li>
+              <li>Thin right-hand column (sidebar) for links and related information that doesn’t go to the bottom of the page</li>
+              <li>Footer</li>
+            </ul>
+            <p><strong>Why it works:</strong> People are creatures of habit, and this is a tested pattern that shows the way people think, look at and read websites. It’s comfortable and common, making it easy for users to understand and interact with.</p>
+            <p><strong>Incorporate a trend:</strong> Flip the location of the sidebar or turn the sidebar into the navigation area, or use a hero image on top of the F-shaped pattern.</p>
+            <p>‍</p>
+            <h3>5. Minimal Layering</h3>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/berkeley.jpg">
+              </div>
+            </figure>
+            <p>‍</p>
+            <p><strong>Why it works:</strong> Layering can draw the eye to exactly the location where it matters most in the design. Particularly in concert with a simple overall design, this is the element that begs users to take notice. Layering on a minimal outline is a great way to showcase or highlight a particular piece of content or call to action.</p>
+            <p><strong>Incorporate a trend:</strong> Use subtle gradients or shadows to define elements in different layers. While these design techniques fell out of fashion for a while, creating barely-there differentiation is making a major comeback, thanks to Material Design and a refocusing on creating something tactile in the two-dimensional space.</p>
+            <h4>Conclusion</h4>
+            <p>When in doubt with any type of design, the best thing you can go is go back to the roots of design theory. Use classic ideas and principles to guide your decision-making.</p>
+            <p>In most cases, this will result in something that’s clean, easy to read and follows conventional style. Once you have that basic framework complete, then you can add a trendy element to keep the layout looking fresh. Using ones of this layout philosophy will help you create a website that will withstand the test of time better without looking dated. (Now that you are thinking about it, you’ll probably start to notice how many websites actually use one of these concepts.)</p>
+            <p>‍</p>
+            <p>‍</p>
             <p>‍</p>
             <p>‍</p>
             <p>‍</p>
