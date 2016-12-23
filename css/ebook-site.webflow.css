@@ -47,7 +47,8 @@ blockquote {
   margin-bottom: 10px;
   padding: 10px 30px;
   border-left: 5px solid #e2e2e2;
-  color: #617ab1;
+  background-color: hsla(0, 0%, 89%, .23);
+  color: #000;
   font-size: 18px;
   line-height: 22px;
   font-weight: 200;
@@ -480,6 +481,7 @@ blockquote {
   margin-right: 0px;
   margin-bottom: 0px;
   padding: 3% 0% 3% 0px;
+  background-color: #fff;
   font-family: Nunito, sans-serif;
   color: #414141;
   font-size: 14px;
@@ -541,7 +543,7 @@ blockquote {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  display: none;
+  display: block;
   overflow: scroll;
   height: 100vh;
   min-width: 55%;
@@ -569,7 +571,7 @@ blockquote {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  display: block;
+  display: none;
   overflow: scroll;
   height: 100vh;
   min-width: 55%;
