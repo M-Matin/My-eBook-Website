@@ -161,25 +161,89 @@
         </div>
         <div class="text-holder">
           <div class="rich-text w-richtext">
-            <h2>Why Responsive Design?aaa</h2>
-            <blockquote>If you've built a web site in the past several years, you've probably heard of Responsive Design. Coined in 2010 by designer Ethan Marcotte, the term covers a set of techniques that allow one flexible web design to serve many different screen sizes.</blockquote>
-            <p>In the years since it hit the scene, "responsive" has become the default choice for&nbsp;<a href="http://blog.aids.gov/2014/07/aids-gov-mobile-success-story.html" target="_blank">modern, mobile-friendly sites</a>. With that visibility, though, comes misunderstanding and controversy! Some proponents treat responsive design as a silver bullet for every project's tough problems, while detractors complain it will limit their grand vision. Some clients believe they have to choose between a responsive site or a native mobile app, as if one ruled out the other. And in a few frustrating situations, we've seen totally separate mobile, tablet, and desktop mockups passed off as a "responsive" approach.</p>
-            <p>At Lullabot, we believe that&nbsp;<a href="https://www.lullabot.com/articles/responsive-adaptive-web-design">responsive design is a critical part of future-friendly web publishing</a>. Making the most of it requires understanding which problems it solves, which ones it doesn’t, and how it fits your project’s needs. In this article we'll take a look at how we build responsive sites, correct some common misconceptions, and explain the real benefits for your projects.</p>
-            <h3>What is "Responsive," anyways?</h3>
-            <p>Ethan Marcotte's&nbsp;<a href="http://alistapart.com/article/responsive-web-design/">seminal article</a>&nbsp;and follow-up book define specific techniques that make a site responsive. Both make great reading for anyone who wants to dig into the details. At a high level, we can boil it down to a handful of principles.</p>
+            <h2>Why Responsive Design?</h2>
+            <p>Communicating via typefaces. Fonts and layout. Designing for readers. Legibility. Web Fonts: there’s life after Georgia and Verdana. Using CSS @font-face to embed licensed fonts on your site. Typekit and other solutions. Controlling web typography: size, font, color. CSS methods, browser problems, user problems, and workarounds. Typographically correct punctuation. Unicode. Scaling text. </p>
+            <h3>Accessibility Whack-A-Mole</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/eleanor-ratliff" target="_blank">Eleanor Ratliff</a>&nbsp;·&nbsp;December 06, 2016</p>
+            <blockquote>“How do we deal with accessibility needs for which there are no definitive answers?”&nbsp;</blockquote>
+            <p>asks Eleanor Ratliff. Sometimes we arrive at a fix that helps one group of people only to find that our solution undermines another group’s experience. Through the prism of typeface choice, Ratliff relates how she and her team tackled the problem of accessibility whack-a-mole for a rebranding project.</p>
             <p>‍</p>
-            <h4>BUILD A FLUID, FLEXIBLE LAYOUT.</h4>
-            <p>Ever since the first Photoshop mockup was used to sell a site design, web developers have been creating "fixed width" layouts that target specific screen sizes. When space-constrained mobile browsers hit the market, they had to create custom mobile sites with stripped-down designs. Responsive design starts with a layout that&nbsp;<a href="http://alistapart.com/article/fluidgrids">stretches and squishes</a>&nbsp;to fit any screen, often relying on&nbsp;<a href="http://www.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/">percentages and ratios</a>&nbsp;rather than fixed sizes and positions.</p>
+            <figure class="w-richtext-align-center" style="max-width: 60%;" data-rt-type="image" data-rt-align="center" data-rt-max-width="">
+              <div><img src="images/cat-whackamole-eleanor-ratliff_960_466_81.jpg">
+              </div>
+              <figcaption><a href="http://alistapart.com/article/accessibility-whack-a-mole" target="_blank">Accessibility Whack-A-Mole</a>
+              </figcaption>
+            </figure>
             <p>‍</p>
-            <h4>MEDIA QUERIES TWEAK ELEMENTS WHEN THE LAYOUT BREAKS.</h4>
-            <p>Stretchable, squeezable fluid layouts can't cover every extreme: a design that looks great on a 27" desktop monitor might look impossibly cluttered on a 4" phone. Designers identify situations where the fluid design breaks, and use&nbsp;<a href="http://cssmediaqueries.com/">conditional CSS rules</a>&nbsp;to add special styling instructions for those "<a href="http://alistapart.com/article/designing-for-breakpoints">breakpoints</a>." On a tall-but-skinny smartphone, for example, sidebars might be moved to the bottom of an article to leave more space for text. On a wide desktop screen, photo captions might be moved beside images to take advantage of the extra room.</p>
+            <h3>Webfonts on the Prairie</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/spartan" target="_blank">Richard Fink</a>&nbsp;·&nbsp;September 06, 2016</p>
+            <p>Richard Fink first wrote about webfonts for A List Apart in 2010. Back then, those of us making the web were itching to break away from so-called “web-safe” fonts. And break away we did: by 2016, roughly 60 percent of sites were reportedly using webfonts, up from just two percent in 2011. Webfonts and, by extension, web typography, have blossomed. So surely no one would argue for a return to system fonts, right? Wrong. This article teases apart the arguments for and against.</p>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/tree-edit_960_450_81.jpg">
+              </div>
+              <figcaption><a href="http://alistapart.com/article/webfonts-on-the-prairie" target="_blank">‍Webfonts on the Prairie</a>
+              </figcaption>
+            </figure>
             <p>‍</p>
-            <h4>IMAGES AND MEDIA MUST BE FLEXIBLE.</h4>
-            <p>Giant fixed-width images, embedded media players, and clunky widgets can all break your smooth, fluid layouts. Styling for these elements should use percentages and ratios, too—ensuring that they conform to fit the responsive layout they're placed in. Tools like&nbsp;<a href="http://fitvidsjs.com/">FitVid.js</a>and the new&nbsp;<a href="http://webdesign.tutsplus.com/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015">HTML Picture element</a>&nbsp;can make this part easier.</p>
+            <h3>The Rich (Typefaces) Get Richer</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/jeremiah-shoaf" target="_blank">Jeremiah Shoaf</a>&nbsp;·&nbsp;May 17, 2016</p>
+            <p>Type on the web has come a long way since the beginning of the decade. We now have literally thousands of fonts at our disposal to use on our sites. But the same faces—the Futuras, the Gothams, the Proxima Novas—crop up everywhere. Jeremiah Shoaf encourages us to break out of our cognitive ruts and <a href="http://alistapart.com/article/the-rich-typefaces-get-richer" target="_blank">explore</a> the wealth of typographic diversity at our fingertips.</p>
             <p>‍</p>
-            <h4>RESPOND TO CAPABILITIES, NOT SPECIFIC DEVICES.</h4>
-            <p>The most important principle is simple: responsive design plans for scenarios and capabilities, rather than specific hardware devices. Instead of "sniffing" for iPhones and generating custom HTML and CSS, a responsive site uses one standard set of HTML. Conditional CSS rules and client-side scripts account for the special cases like low-resolution portrait displays, mobile devices with GPS capabilities, and so on. That ensures the design will respond intelligently to any device that matches the right criteria—including newly released ones—and the long tail of older devices often ignored by the latest design trends.</p>
-            <p>Although device detection, tailored markup, and other techniques can be layered on top of a responsive design, a strong responsive foundation is the most reliable starting point.</p>
+            <h3>2015 Summer Reading Issue</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/alastaff" target="_blank">ALA Staff</a>&nbsp;·&nbsp;July 28, 2015</p>
+            <p>The dog days are upon us—but instead of giving up in the summer swelter, take heart! We’ve got an extra-special reading list of bright, insightful brainfood. ALA’s third annual summer reader explores what’s been on the web industry’s mind lately, from accessibility to performance, from CSS techniques to web type, from mentorship to more collaborative approaches. It’s a list as cool and fancy as a watermelon-basil popsicle. Yeah, that does sound good, doesn’t it? Kick back, chill out, and get to reading.</p>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/ALA356_summerreading_300_960_420_81.jpg">
+              </div>
+              <figcaption><a href="http://alistapart.com/article/summer-reading-issue-2015" target="_blank">Summer Reading Issue</a>
+              </figcaption>
+            </figure>
+            <p>‍</p>
+            <h3>Readable Wearables</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/mattgriffin" target="_blank">Matt Griffin</a>&nbsp;·&nbsp;March 19, 2015</p>
+            <p>Displays that are more tiny than our lowest-size breakpoints require a more condensed range of type sizes. If you don’t already have in place a typographic system that can absorb the demands of this new context (watches, wearables, digital sticky notes, whatever), now might be the time to consider it. Matt Griffin was ready for anything because his <a href="http://alistapart.com/column/readable-wearables" target="_blank">site</a> was simple and built to be future friendly.</p>
+            <p>‍</p>
+            <h3>Live Font Interpolation on the Web</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/Aetherpoint" target="_blank">Andrew Johnson</a>&nbsp;·&nbsp;January 20, 2015</p>
+            <p>We all want to design great typographic experiences—while serving users on a huge array of devices. But today’s type is inflexible and doesn’t scale. We can solve this problem by making webfonts more systemized and context-aware, and live web font interpolation—the modification of a font’s design in the browser—can help us get there. Andrew Johnson points the way.</p>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/ALA_412_live-font-interpolation_960_417_81.jpg">
+              </div>
+              <figcaption><a href="http://alistapart.com/article/live-font-interpolation-on-the-web" target="_blank">Interpolation on the Web</a>
+              </figcaption>
+            </figure>
+            <p>‍</p>
+            <h3>How We Read</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/jsm" target="_blank">Jason Santa Maria</a>&nbsp;·&nbsp;August 05, 2014</p>
+            <p>When you read, you filter text through your experiences and past conversations. You put words into context. You interpret. So how can we use typography to welcome readers and convince them to sit with us through this process? A List Apart alum Jason Santa Maria explains in this excerpt from Chapter 1 of On Web Typography, his new book from A Book Apart.</p>
+            <p>‍</p>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/excerptillustration_300_960_469_81.jpg">
+              </div>
+              <figcaption><a href="http://alistapart.com/article/how-we-read" target="_blank">How We Read</a>
+              </figcaption>
+            </figure>
+            <p>‍</p>
+            <h3>Creating Style Guides</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/susanrobertson" target="_blank">Susan Robertson</a>&nbsp;·&nbsp;April 08, 2014</p>
+            <p>A style guide, also referred to as a pattern library, is a living document that details the front-end code for all the elements and modules of a website or application. It also documents the site’s visual language, from header styles to color palettes. In short, a proper style guide is a one-stop guide that the entire team can reference when considering site changes and iterations. Susan Robertson shows us how to build and maintain a style guide that helps everyone from product owners and producers to designers and developers keep an ever-changing site on brand and on target.</p>
+            <figure class="w-richtext-align-fullwidth" style="max-width: 100%;" data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="">
+              <div><img src="images/ALA393_styleguides_300_960_502_81.jpg">
+              </div>
+              <figcaption><a href="http://alistapart.com/article/creating-style-guides" target="_blank">Creating Style Guides</a>
+              </figcaption>
+            </figure>
+            <p>‍</p>
+            <h3>Around the World Wide Web in Eighty Minutes</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/W3C" target="_blank">The W3C</a>&nbsp;·&nbsp;August 22, 2013</p>
+            <p>London-based web designer Phileas Fogg IV has teamed up with his internationalization friend Jean Passepartout III to <a href="http://alistapart.com/column/around-the-www-in-80-minutes" target="_blank">explore</a> the world’s typographic conventions…</p>
+            <p>‍</p>
+            <h3>Responsive Typography is a Physical Discipline, But Your Computer Doesn’t Know It (Yet)</h3>
+            <p>by&nbsp;<a href="http://alistapart.com/author/NickSherman" target="_blank">Nick Sherman</a>&nbsp;·&nbsp;April 04, 2013</p>
+            <p>For ideal <a href="http://alistapart.com/column/responsive-typography-is-a-physical-discipline" target="_blank">typography</a>, web designers need to know as much as possible about each user’s reading environment. That may seem obvious, but the act of specifying web typography is currently like ordering slices of pizza without knowing how large the slices are or what toppings they are covered with.</p>
+            <p>‍</p>
+            <p>‍</p>
+            <p>‍</p>
             <p>‍</p>
             <p>‍</p>
             <p>‍</p>
