@@ -143,11 +143,22 @@ blockquote {
   height: auto;
   margin-bottom: 18px;
   padding: 0px 10px;
+  -webkit-transition: background-color 650ms ease, -webkit-transform 650ms ease;
+  transition: background-color 650ms ease, -webkit-transform 650ms ease;
+  transition: background-color 650ms ease, transform 650ms ease;
+  transition: background-color 650ms ease, transform 650ms ease, -webkit-transform 650ms ease;
   font-family: Nunito, sans-serif;
   color: #535353;
   font-size: 21px;
   line-height: 19px;
   font-weight: 400;
+}
+
+.content-wrapper.chapters-subject:hover {
+  background-color: hsla(0, 0%, 73%, .13);
+  -webkit-transform: translate(9%, 0px);
+  -ms-transform: translate(9%, 0px);
+  transform: translate(9%, 0px);
 }
 
 .chapter-name {
