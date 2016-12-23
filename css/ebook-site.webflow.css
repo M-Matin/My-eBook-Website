@@ -543,7 +543,7 @@ blockquote {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  display: block;
+  display: none;
   overflow: scroll;
   height: 100vh;
   min-width: 55%;
