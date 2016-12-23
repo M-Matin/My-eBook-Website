@@ -478,8 +478,8 @@ blockquote {
   padding: 3% 0% 3% 0px;
   font-family: Nunito, sans-serif;
   color: #171817;
-  font-size: 13px;
-  font-weight: 200;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -634,7 +634,7 @@ blockquote {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  display: block;
+  display: none;
   overflow: scroll;
   height: 100vh;
   min-width: 55%;
