@@ -113,19 +113,6 @@ blockquote {
   backface-visibility: visible;
 }
 
-.ch12._12 {
-  display: block;
-  -webkit-transform: translate(-111%, 0px);
-  -ms-transform: translate(-111%, 0px);
-  transform: translate(-111%, 0px);
-}
-
-.ch12._11 {
-  -webkit-transform: translate(83%, 0px);
-  -ms-transform: translate(83%, 0px);
-  transform: translate(83%, 0px);
-}
-
 .content-wrapper {
   display: block;
   max-width: 560px;
@@ -188,11 +175,11 @@ blockquote {
 }
 
 .author-image {
-  width: 40px;
-  height: 40px;
+  width: 200px;
+  height: 200px;
   margin-top: 30px;
   margin-bottom: 10px;
-  border-radius: 70px;
+  border-radius: 95px;
 }
 
 .author-name {
@@ -223,8 +210,9 @@ blockquote {
 
 .chapters-link {
   position: absolute;
-  left: 3%;
-  bottom: 5%;
+  left: 70px;
+  bottom: 6%;
+  display: block;
   padding-left: 38px;
   background-color: #fff;
   background-image: url('../images/web-page-menu-icon-75688.png');
@@ -243,7 +231,7 @@ blockquote {
   top: 0px;
   bottom: 0px;
   z-index: 999;
-  display: block;
+  display: none;
   overflow: scroll;
   width: 45%;
   height: auto;
@@ -412,13 +400,6 @@ blockquote {
   padding-right: 0px;
 }
 
-.chapter-div {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  margin-left: 26px;
-}
-
 .close {
   display: block;
   margin-bottom: 24px;
@@ -434,29 +415,6 @@ blockquote {
 .close:hover {
   font-family: Nunito, sans-serif;
   color: #0a0a0a;
-}
-
-.right-content-wrapper {
-  position: static;
-  display: block;
-  padding: auto;
-  background-color: #081118;
-}
-
-.content-wrapper-right {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .top-content {
@@ -478,13 +436,6 @@ blockquote {
   text-decoration: none;
 }
 
-.article-text {
-  font-family: Nunito, sans-serif;
-  font-size: 17px;
-  line-height: 26px;
-  font-weight: 400;
-}
-
 .rich-text {
   position: static;
   overflow: visible;
@@ -501,32 +452,9 @@ blockquote {
   text-decoration: none;
 }
 
-.rich-text.link {
-  color: #0e0f0e;
-}
-
 .text-holder {
   margin-bottom: 0px;
   padding-bottom: 0px;
-}
-
-.chapter-11 {
-  display: none;
-  background-color: #fff;
-  -webkit-transform: translate(-20px, 0px);
-  -ms-transform: translate(-20px, 0px);
-  transform: translate(-20px, 0px);
-}
-
-.chapter-12 {
-  display: block;
-}
-
-.chapter-10 {
-  display: block;
-  -webkit-transform: translate(-18px, 0px);
-  -ms-transform: translate(-18px, 0px);
-  transform: translate(-18px, 0px);
 }
 
 .ch11 {
